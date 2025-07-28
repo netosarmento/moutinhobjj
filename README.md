@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="logo.png" alt="CT Moutinho BJJ Logo" height="100">
+  <img src="img/logo PNG.png" alt="CT Moutinho BJJ Logo" height="100">
 </p>
 
 <h1 align="center">🥋 CT Moutinho BJJ</h1>

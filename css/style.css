@@ -57,7 +57,7 @@ body {
 /* BOTÕES */
 .btn {
   padding: 0.8rem 1.4rem;
-  color: #59F4AA;
+  color: #950609;
   transition: 0.1s;
   border: 1px solid black;
   background: #1c1f1f;
@@ -66,7 +66,7 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), 0 0 0 1px #59F4AA;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), 0 0 0 1px #950609;
 }
 
 /* SOMBRA DECORATIVA */
@@ -83,7 +83,7 @@ body {
 .subtitle,
 #eventos h3 {
   text-transform: uppercase;
-  color: #59F4AA;
+  color: #950609;
   position: relative;
   z-index: 1;
   margin-bottom: 0.2rem;
@@ -93,7 +93,7 @@ body {
 .enf {
   width: 2.7rem;
   height: 2.7rem;
-  background: url("../img/ball.svg") no-repeat;
+  background: url("../img/ball2.svg") no-repeat;
   background-size: 2.7rem;
   position: absolute;
 }
@@ -112,7 +112,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #34c27d;
+  background: #ffff;
 }
 
 /* RESPONSIVO PARA TELAS ATÉ 640PX */
@@ -132,7 +132,7 @@ body {
 }
 
 #header .logo {
-  color: #59F4AA;
+  color: #950609;
   font-size: 2rem;
   margin-right: 1rem;
 }
@@ -161,7 +161,7 @@ body {
 }
 
 #header .menu-mobile.active {
-  border: 1px solid #59F4AA;
+  border: 1px solid #950609;
 }
 
 /* RESPONSIVO PARA TELAS ATÉ 750PX */
@@ -205,8 +205,8 @@ body {
 
 /* ENTRADA */
 #entrada {
-  background: url("../img/bg-entrada.jpg") center / cover no-repeat;
-  min-height: 100vh;
+  background: url("../img/bg-entrada3.jpg") center / cover no-repeat;
+  min-height: 80vh;
   margin-top: -6rem;
   padding-top: 6rem;
   position: relative;
@@ -228,14 +228,23 @@ body {
 
 #entrada .textos h1 {
   font-size: 2.5rem;
-  background: linear-gradient(
+ background: linear-gradient(
     87.55deg,
     #2C2F31 0.32%,
     #fff 19.97%,
-    #9A9A9A 38.83%,
+    #b6b5b5 38.83%,    
     #fff 61.29%,
-    #9A9A9A 77.33%
+    #b4b4b4 77.33%
   );
+/*  text-shadow: 2px 2px 4px rgba(100, 98, 98, 0.7);  sombra escura suave */
+/*  background: linear-gradient(
+  87.55deg,
+  #1e1f20 0.32%,
+  #bcbcbc 19.97%,
+  #6e6e6e 38.83%,
+  #bcbcbc 61.29%,
+  #6e6e6e 77.33%
+);  */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -250,7 +259,7 @@ body {
 /* ENTRADA */
 
 #entrada .textos h1 span {
-  background: #59F4AA;
+  background: #960306;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -389,7 +398,7 @@ body {
 }
 
 #sobre .img {
-  max-width: 450px;
+  max-width: 300px;
   position: relative;
 }
 
@@ -489,7 +498,7 @@ body {
 #valores .barra {
   width: 3px;
   height: 10rem;
-  background: #59F4AA;
+  background: #960306;
   position: relative;
   right: -0.5rem;
   top: calc(50% - 5rem);
@@ -700,12 +709,12 @@ body {
 }
 
 #modalidades .lista-planos > li:hover {
-  border: 1px solid #59F4AA;
+  border: 1px solid #960306;
   background: #1c1f1f;
 }
 
 #modalidades .lista-planos > li:nth-of-type(2) {
-  border: 1px solid #59F4AA;
+  border: 1px solid #960306;
   margin-top: -1rem;
 }
 
@@ -714,7 +723,7 @@ body {
   top: -1.5rem;
   right: 0;
   left: 0;
-  color: #59F4AA;
+  color: #960306;
 }
 
 #modalidades .lista-planos > li h3 {
@@ -739,7 +748,7 @@ body {
   text-align: center;
   font-family: 'Days One', sans-serif;
   font-size: 1.3rem;
-  color: #59F4AA;
+  color: #960306;
 }
 
 #modalidades .lista-planos > li .preco span {
