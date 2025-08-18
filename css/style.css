@@ -143,6 +143,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  color: #080808;
 }
 
 #header .menu a + a {
@@ -203,10 +204,35 @@ body {
   }
 }
 
+/* Logo img */
+
+.logo img {
+  height: 70px;        /* tamanho padrão */
+  width: auto;
+  display: block;
+}
+
+/* Responsivo até 991px */
+@media (max-width: 991px) {
+  .logo img {
+    height: 50px;      /* reduz logo */
+  }
+}
+
+/* Responsivo até 661px */
+@media (max-width: 661px) {
+  .logo img {
+    height: 40px;      /* reduz ainda mais */
+  }
+}
+
+
 /* ENTRADA */
 #entrada {
-  background: url("../img/bg-entrada3.jpg") center / cover no-repeat;
-  min-height: 80vh;
+ background: url("../img/bg-1-black.png") center / cover no-repeat; 
+/* background-size: contain; inutilizando por hora */
+/* border-radius: 1rem; */
+  min-height: 100vh;
   margin-top: -6rem;
   padding-top: 6rem;
   position: relative;
@@ -228,7 +254,8 @@ body {
 
 #entrada .textos h1 {
   font-size: 2.5rem;
- background: linear-gradient(
+  background: linear-gradient(#950609, #960306);
+  /* background: linear-gradient(
     87.55deg,
     #2C2F31 0.32%,
     #fff 19.97%,
@@ -370,6 +397,14 @@ body {
   }
 }
 
+
+/* imagem mestre */
+
+#fundador {
+  transition: opacity 1.9s ease; /* 0.4 segundos de fade */
+}
+
+
 /* SOBRE */
 
 #sobre {
@@ -445,45 +480,63 @@ body {
   }
 }
 
-/* VALORES */
-
+/* =======================
+   SEÇÃO VALORES
+======================= */
 #valores {
   background: #080808;
   overflow: hidden;
+  padding: 4rem 2rem;
 }
 
 #valores .container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   position: relative;
+  flex-wrap: wrap; /* garante quebra no mobile */
 }
 
+/* BLOCO DE TEXTO (lado esquerdo) */
 #valores .content {
   max-width: 21rem;
+  flex: 1 1 40%;
 }
 
 #valores .description {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  color: #ccc;
+  line-height: 1.5;
 }
 
 #valores .btn {
   margin-top: 3rem;
 }
 
+/* LISTA DE VALORES (lado direito – grid) */
 #valores .lista-valores {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 0.5rem;
   margin-left: auto;
+  flex: 1 1 50%;
 }
 
 #valores .lista-valores li {
   padding: 1.5rem;
-  border: 1px solid black;
+  border: 1px solid #000;
   background: #111313;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  color: #ddd;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#valores .lista-valores li:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.6);
 }
 
 #valores .lista-valores li img {
@@ -495,6 +548,37 @@ body {
   max-width: 11rem;
 }
 
+/* LISTA DE CONTATOS (lado direito – nova) */
+#valores .lista-contatos {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+#valores .lista-contatos li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+#valores .lista-contatos li a {
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+#valores .lista-contatos li:hover {
+  transform: translateX(5px);
+}
+
+#valores .lista-contatos li i {
+  color: #960306; /* vermelho da sua paleta */
+  font-size: 1.3rem;
+}
+
+/* BARRA VERTICAL */
 #valores .barra {
   width: 3px;
   height: 10rem;
@@ -504,26 +588,48 @@ body {
   top: calc(50% - 5rem);
 }
 
-/* VALORES – RESPONSIVO */
-@media (max-width: 880px) {
+/* =======================
+   RESPONSIVIDADE
+======================= */
+@media (max-width: 991px) {
   #valores .container {
     flex-direction: column;
-  }
-
-  #valores .container .content {
     text-align: center;
-    margin-bottom: 3rem;
+    align-items: center;
   }
 
-  #valores .container .lista-valores {
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+  #valores .content {
+    max-width: 100%;
   }
 
-  #valores .barra {
-    display: none;
+  #valores .lista-valores {
+    grid-template-columns: 1fr; /* empilha os cards */
+    margin: 2rem auto 0;
+  }
+
+  #valores .lista-contatos li {
+    justify-content: center;
   }
 }
+
+@media (max-width: 661px) {
+  #valores h2 {
+    font-size: 1.6rem;
+  }
+
+  #valores .description {
+    font-size: 0.95rem;
+  }
+
+  #valores .lista-valores li {
+    padding: 1rem;
+  }
+
+  #valores .lista-contatos li {
+    font-size: 1rem;
+  }
+}
+
 
 /* EVENTOS */
 
@@ -697,6 +803,10 @@ body {
   justify-content: center;
 }
 
+
+
+
+
 #modalidades .lista-planos > li {
   padding: 3rem 2rem;
   border: 1px solid black;
@@ -779,6 +889,158 @@ body {
     margin-top: 3rem;
   }
 }
+
+/*  CSS BOTAO +MAIS */
+
+
+
+.sanfona-botao {
+  display: block;
+  margin: 1rem auto; /* centraliza o botão */
+  padding: 0.4rem 1.2rem;
+  font-family: 'Days One', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #e0e0e0, #ffffff);
+  color: #111;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+/* Hover e Click com efeito zoom-in */
+.sanfona-botao:hover,
+.sanfona-botao:active {
+  transform: scale(1.07);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #b0b0b0, #ffffff);
+}
+
+/* Conteúdo sanfona oculto por padrão */
+.sanfona-conteudo {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: 'Days One', sans-serif;
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Conteúdo ativo */
+.sanfona-conteudo.ativo {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animação de aparecimento suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media screen and (max-width: 991px) {
+  .sanfona-botao {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+  }
+  .sanfona-conteudo {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .sanfona-botao {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.8rem;
+  }
+  .sanfona-conteudo {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+}
+
+
+/* FIM */
+
+
+
+/* FEEDBACK */
+
+/* FEEDBACK */
+#feedback {
+  background: #080808;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+#feedback h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#feedback .feedback-item {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#feedback .feedback-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #960306;
+}
+
+#feedback .feedback-text {
+  font-style: italic;
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+#feedback .stars i {
+  color: #960306;
+  margin: 0 2px;
+  font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  #feedback {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 661px) {
+  #feedback h2 {
+    font-size: 1.5rem;
+  }
+  #feedback .feedback-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+/* FIM */
 
 /* GALERIA */
 #galeria {
@@ -979,4 +1241,117 @@ footer .by {
 [data-anima].animated {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+/* POP UP */
+
+/* POPUP - base */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  position: relative;
+  font-family: "Arial", sans-serif; /* use a mesma do seu site */
+}
+
+.popup-title {
+  font-size: 1.8rem;
+  color: #950609;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.popup-subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.popup-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.popup-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #950609;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.popup-btn {
+  background: #950609;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.popup-btn:hover {
+  background: #c20b0b;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+  .popup-content {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+  .popup-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 661px) {
+  .popup-content {
+    max-width: 90%;
+    padding: 1.2rem;
+  }
+  .popup-title {
+    font-size: 1.4rem;
+  }
+  .popup-btn {
+    width: 100%;
+  }
 }

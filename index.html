@@ -10,7 +10,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/edit.css">
+  <!-- Bootstrap -->
+
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 </head>
 
 <body>
@@ -26,13 +36,15 @@
   </div>
   <header id="header">
     <nav class="container">
-      <a href="#" class="logo">Moutinho</a>
-      <div class="menu">
-        <a href="#">Modalidades</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="#" class="espaco-cliente">Fale Conosco</a>
-        <a href="#" class="btn">Matricule-se</a>
+      <a href="#" class="logo">
+        <img src="./img/logosb.png" alt="Logo Moutinho">
+      </a>
+      <div class="menu" style="font-weight: 900; color:#950609; font-size:large" >
+        <a href="#eventos" class="btn" style="border-radius: 20px;">Modalidades</a>
+        <a href="#sobre" class="btn" style="border-radius: 20px;">Sobre</a>
+        <a href="#valores" class="btn" style="border-radius: 20px;">Contato</a>
+        <a href="#valores" class="espaco-cliente btn" style="border-radius: 20px;">Fale Conosco</a>
+      <!--  <a href="#" class="btn" style="border-radius: 20px;">Matricule-se</a> -->
       </div>
       <button class="menu-mobile" aria-label="abrir menu" type="button"><img src="./img/menu.svg" alt=""></button>
     </nav>
@@ -40,18 +52,19 @@
   <main>
     <section id="entrada">
       <div class="sombra"></div>
-      <div class="enf enf-1" data-anima="f-left"></div>
+    <!--  <div class="enf enf-1" data-anima="f-left"></div>  -->
       <div class="enf enf-2" data-anima="f-right"></div>
       <div class="container">
         <div class="textos">
-          <img src="./img/enf.svg" alt="" class="det">
-          <p class="subtitle" data-anima="f-top" style="font-weight: 900;">Bem vindo a Moutinho BJJ</p>
-          <h1 data-anima="f-top">Brazilian <br><span>Jiu</span> Jitsu</h1>
-          <p data-anima="f-bottom" style="color:black; font-size: 14px; font-weight: 600;">Arte<br> Suave</p>
-          <a href="#" class="btn" data-anima="f-bottom">Comece agora</a>
-        </div>
-        <address class="endereco">
-          <p>Belém - PA <br>
+    <!--      <img src="./img/enf.svg" alt="" class="det"> -->
+          <p class="subtitle" data-anima="f-top" style="font-weight: 900;"></p>
+          <h1 data-anima="f-top"> <br><span></span> </h1>
+          <p data-anima="f-bottom" style="color:black; font-size: 14px; font-weight: 600;"><br></p>
+        <!--  <a href="#" class="btn" data-anima="f-bottom">Comece agora</a>  -->
+        </div> 
+        <address class="endereco" style="margin-top: 50px; color: #000;">
+          <p style="font-weight: 600; color:#fff;">Belém - Pará <br>
+            Amazônia - Brasil<br>
             Rua Caetano Rufinos, 66 (Altos)</p>
         </address>
         <address class="redes">
@@ -61,100 +74,192 @@
         </address>
       </div>
     </section>
+    <!-- Boas Vindas-->
+    <section id="boas-vindas" class="sections">
+  <div class="sombra"></div>
+  <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <p class="subtitle" style="color: #950609;">Seja bem-vindo ao Centro de Treinamento Moutinho</p>
+    <h2 style="font-weight: 600; font-size: 22px; color: #fff;">Transformando vidas por meio do esporte, disciplina e treinos com metodologia exclusiva </h2>
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_ID_AQUI" 
+        title="Vídeo de Boas-Vindas" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FIM -->
     <section id="sobre" class="sections">
       <div class="sombra"></div>
       <div class="container">
         <div class="img" data-anima="f-right">
-          <img src="./img/31430.jpg" alt="">
+          <!-- Imagem do mestre -->
+          <img 
+            src="./img/31429.jpg" 
+            alt="Imagem Fundador" 
+            id="fundador" 
+            style="cursor: pointer;">
+
           <div class="enf"></div>
         </div>
         <div class="content" data-anima="f-left">
-          <p class="subtitle">Mestre João Bosco Moutinho</p>
-          <h2>Faixa-Preta grau 2 pela IFBJJ</h2>
-          <p class="description">Olá, sou educador físico e atleta de BJJ, treinador a 4 anos. Também tenho certificação internacional da Internacional em Crosstraining (Science Sport).</p>
-          <a href="#" class="btn">Sobre nos</a>
+          <p class="subtitle" style="text-align: center;">João Bosco Moutinho</p>
+          <h2 style="text-align: center; font-weight: 600; font-size: 20px;">
+  Educador Físico</h2><h2 style="text-align: center; font-size: 20px;"> Faixa-Preta de Jiu-Jitsu</h2><h2 style="text-align: center; font-size: 20px;"> Fundador Time Moutinho</h2>
+          <p class="description" style="text-align: justify;">Olá! Sou João Bosco Moutinho, educador físico e faixa-preta de jiu-jitsu (2º grau), com mais de 4 anos de experiência como treinador. Fundador e mentor do Centro de Treinamento Moutinho, conduzo atletas e alunos em uma jornada de performance, disciplina e superação, unindo conhecimento técnico e paixão pelo esporte para transformar vidas.</p>
+        <!-- <a href="#" class="btn">Sobre nos</a> -->
         </div>
       </div>
     </section>
-    <section id="valores" class="sections">
-      <div class="container">
-        <div class="content" data-anima="f-right">
-          <p class="subtitle">Time Moutinho BJJ</p>
-          <h2>Nossa Missão</h2>
-          <p class="description">Democratizar o acesso ao Jiu-jitsu e difundi-lo como uma filosofia de vida que prepara para os desafios dentro e fora do tatame. Além de visar desenvolver nossa comunidade com uma metodologia exclusivas que tem como principais pilares a qualidade técnicae as habilidades e competências comportamentais e emocionais.</p>
-          <img src="./img/enf.svg" alt="">
-        </div>
-        <ul class="lista-valores" data-anima="f-left">
-          <li>
-            <img src="./img/val-1-icon2.png" alt="">
-            <p>Fortaleça o corpo e a mente com treinos que melhoram o condicionamento, a resistência e a saúde de forma integrada. </p>
-          </li>
-          <li>
-            <img src="./img/val-2-icon.png" alt="">
-            <p>Desenvolva o autocontrole, o foco e a resiliência. Aqui, cada desafio é uma oportunidade para crescer emocionalmente.</p>
-          </li>
-          <li>
-            <img src="./img/val-3-icon.png" alt="">
-            <p>Aprender técnicas eficientes e seguras do Jiu-Jitsu, aprimorando sua autodefesa e domínio corporal com respeito e ética.</p>
-          </li>
-          <li>
-            <img src="./img/val-4-icon.png" alt="">
-            <p>Com treino contínuo e comprometimento, construímos não só campeões, mas pessoas mais fortes, responsáveis e determinadas.</p>
-          </li>
-        </ul>
-        <div class="barra"></div>
-      </div>
-    </section>
+
+    <!-- ANTIGO VALORES -->
+    
     <section id="eventos" class="sections">
       <div class="container">
         <div class="titulos" data-anima="f-top">
-          <p class="subtitle">Time Moutinho BJJ</p>
-          <h2>Treinos<br> Semanais</h2>
+          <p class="subtitle">Time Moutinho</p>
+          <h2>Modalidades<br> Disponiveis</h2>
         </div>
         <ul class="lista-eventos" data-anima="f-bottom">
           <li>
-            <a href="#">
-              <div class="img"><img src="./img/IMG-95.jpg" style="border-radius: 5px;" alt="Imagem de treino"></div>
-              <h3>Treino Adulto e Kids</h3>
-              <p>Treino Kids 18h às 19h.<br> Treino Adulto 19h às 20h.</p>
-              <div class="data">
+            
+              <div class="img"><img src="./img/IMG-80.jpg" style="border-radius: 5px;" alt="Imagem de treino"></div>
+              <h3>Jiu-Jitsu Adulto</h3>
+              <p>Segunda, Quarta e Sexta.<br>Turma Mista<br> Treino 19h às 20h.</p>
+              <div class="sanfona-container">
+                  <button class="sanfona-botao" onclick="toggleSanfona()">+Info</button>
+                <div class="sanfona-conteudo">
+                <p>
+                 Aulas voltadas para homens e mulheres a partir de 16 anos, com foco em técnica, disciplina
+                 e condicionamento físico. Ideal para iniciantes ou praticantes que buscam evolução
+                 constante na arte suave. Oferecemos treino gi e no gi e turma de competição.
+              </p>
+            </div>
+        </div>
+             <!-- <div class="data">
                 <p class="dia"></p>
-                <p class="mes">Seg</p>
-              </div>
-            </a>
+                <p class="mes"></p> 
+              </div> -->
+            
           </li>
           <li>
-            <a href="#">
-              <div class="img"><img src="./img/IMG-67.jpg" style="border-radius: 5px;" alt="Imagem de treino"></div>
-              <h3>Treino Adulto e Kids</h3>
-              <p>Treino Kids 18h às 19h.<br> Treino Adulto 19h às 20h.</p>
-              <div class="data">
+            
+              <div class="img"><img src="./img/IMG-950.png" style="border-radius: 5px;" alt="Imagem de treino"></div>
+              <h3>Jiu-Jitsu Infantil</h3>
+              <p>Segunda, Quarta e Sexta.<br> Treino Kids 18h às 19h.</p>
+              <div class="sanfona-container">
+                  <button class="sanfona-botao" onclick="toggleSanfona()">+Info</button>
+                <div class="sanfona-conteudo">
+                <p>
+                  Aulas para crianças a partir de 4 anos, que desenvolvem coordenação, disciplina e valores
+                  como respeito e companheirismo. Um jeito divertido e saudável de aprender jiu-jitsu e
+                  crescer com mais segurança.
+              </p>
+            </div>
+        </div>
+            <!--  <div class="data">
                 <p class="dia"></p>
                 <p class="mes">Quar</p>
-              </div>
+              </div> -->
+            
+          </li>
+          <li>
+            
+              <div class="img"><img src="./img/IMG-67.jpg" style="border-radius: 5px;" alt="Imagem de treino"></div>
+              <h3>Jiu-Jitsu para Mulheres</h3>
+              <p>Terça<br> Treino 20h às 21h.</p>
+            <div class="sanfona-container">
+                  <button class="sanfona-botao" onclick="toggleSanfona()">+Info</button>
+                <div class="sanfona-conteudo">
+                <p>
+                 Turmas exclusivas para mulheres, em um ambiente acolhedor e seguro. O foco é no
+                 aprendizado técnico, fortalecimento físico e autoconfiança, com atenção às demandas e
+                 ritmo de cada aluna.
+              </p>
+            </div>
+        </div>
+              <!--  <div class="data">
+                <p class="dia"></p>
+                <p class="mes">Sex</p>
+              </div> -->
+            
+          </li>
+        </ul>
+        <ul class="lista-eventos" data-anima="f-bottom">
+          <li>
+            
+              <div class="img"><img src="./img/gal-2.webp" style="border-radius: 5px;" alt="Imagem de treino"></div>
+              <h3>Cross Training</h3>
+              <p>Terça e Quinta<br> Treino Adulto 19h às 20h.</p>
+            <div class="sanfona-container">
+                  <button class="sanfona-botao" onclick="toggleSanfona()">+Info</button>
+                <div class="sanfona-conteudo">
+                <p>
+                 Treinamentos intensos que combinam força, resistência e agilidade. Trabalhamos com
+                 circuitos variados que desafiam seus limites e elevam sua performance física. Turma de
+                 grupos pequenos com acompanhamento próximo e individualizado
+              </p>
+            </div>
+        </div>
+              <!--  <div class="data">
+                <p class="dia"></p>
+                <p class="mes">Seg</p>
+              </div> -->
+            
+          </li>
+          <li>
+            <a>
+              <div class="img"><img src="./img/evento-2.webp" style="border-radius: 5px;" alt="Imagem de treino"></div>
+              <h3>Personal Training</h3>
+              <p>Presencial <br> Verificar Agendamento.</p>
+            <div class="sanfona-container">
+                  <button class="sanfona-botao" onclick="toggleSanfona()">+Info</button>
+                <div class="sanfona-conteudo">
+                <p>
+                 Treinamento individualizado, com foco nos seus objetivos: emagrecimento, hipertrofia,
+                 condicionamento ou reabilitação. Acompanhamento técnico e motivação sob medida para
+                 você.
+              </p>
+            </div>
+        </div>
+              <!--  <div class="data">
+                <p class="dia"></p>
+                <p class="mes">Quar</p>
+              </div>  -->
             </a>
           </li>
           <li>
-            <a href="#">
-              <div class="img"><img src="./img/IMG-80.jpg" style="border-radius: 5px;" alt="Imagem de treino"></div>
-              <h3>Treino Adulto e Kids</h3>
-              <p>Treino Kids 18h às 19h.<br> Treino Adulto 19h às 20h.</p>
-              <div class="data">
+            <a>
+              <div class="img"><img src="./img/IMG-28.jpg" style="border-radius: 5px;" alt="Imagem de treino"></div>
+              <h3>Consultoria Online</h3>
+              <p>Dias avulsos<br> Verificar Agendamento.</p>
+            <div class="sanfona-container">
+                  <button class="sanfona-botao" onclick="toggleSanfona()">+Info</button>
+                <div class="sanfona-conteudo">
+                <p>
+                 Treinos personalizados e acompanhamento à distância para quem busca resultados mesmo
+                 fora da academia. Ideal para quem tem rotina corrida ou mora em outra cidade.
+              </p>
+            </div>
+        </div>
+            <!--    <div class="data">
                 <p class="dia"></p>
                 <p class="mes">Sex</p>
-              </div>
+              </div> -->  
             </a>
-          </li>
+          </li>  
         </ul>
         <a href="#" class="btn">Quer mais Informações?</a>
         <div class="enf"></div>
       </div>
       <div class="sombra"></div>
     </section>
+    
     <section id="modalidades" class="sections">
       <div class="container">
         <div class="titulos" data-anima="f-top">
-          <p class="subtitle">Time Moutinho BJJ</p>
+          <p class="subtitle">Time Moutinho</p>
           <h2>NOSSOS PLANOS</h2>
         </div>
         <ul class="lista-planos" data-anima="f-bottom">
@@ -163,36 +268,36 @@
               <h3>Plano Kids</h3>
               <ul>
                 <li>Treinos Semanais</li>
-                <li>1 hora de Treino</li>
-                <li>Acompanhamento, com graduações</li>
-                <li>Aulas teóricas sobre do Brazilian Jiu-jitsu</li>
+                <li>Metodologia Exclusiva</li>
+                <li>Aulas Teóricas</li>
+                <li>Acompanhamento individualizado</li>
               </ul>
               <p class="preco">
-                R$ <span>110</span>,00
+              A PARTIR DE  R$ <span>130</span>,00
               </p>
             </a>
           </li>
           <li>
-            <p class="recomendado">Recomendado</p>
+          <!--  <p class="recomendado">Recomendado</p>  -->
             <a href="#">
               <h3>Plano Adulto</h3>
               <ul>
                 <li>Treinos Semanais</li>
-                <li>1 hora de treino</li>
-                <li>Acompanhamento, com graduações</li>
-                <li>Aulas teóricas sobre do Brazilian Jiu-jitsu</li>
+                <li>Metodologia Exclusiva</li>
+                <li>Aulas Teóricas</li>
+                <li>Acompanhamento individualizado</li>
               </ul>
               <p class="preco">
-                R$ <span>180</span>,00
+              A PARTIR DE  R$ <span>130</span>,00
               </p>
             </a>
           </li>
           <li>
             <a href="#">
-              <h3>Treino NoGI</h3>
+              <h3>Treino No Gi</h3>
               <ul>
                 <li>Treino Semanais</li>
-                <li>Treinos as Terças e Quintas</li>
+                <li>Treinos Agendados</li>
                 <li>1 hora de Treino</li>
                 <li>Aula Especial, verificar agendamento p/ aula</li>
               </ul>
@@ -202,7 +307,53 @@
             </a>
           </li>
         </ul>
-
+      <!-- Adicionando novo aqui -->
+      <ul class="lista-planos" data-anima="f-bottom">
+          <li>
+            <a href="#">
+              <h3>Consultoria Online</h3>
+              <ul>
+                <li>Acompanhamento Remoto</li>
+                <li>Rotina Ajustada</li>
+                <li>Trabalha com Metas</li>
+                <li>Treino específico</li>
+              </ul>
+              <p class="preco">
+              A PARTIR DE  R$ <span>100</span>,00
+              </p>
+            </a>
+          </li>
+          <li>
+          <!--  <p class="recomendado">Recomendado</p> -->
+            <a href="#">
+              <h3>Cross Training</h3>
+              <ul>
+                <li>Treinos Semanais</li>
+                <li>Melhorar condicionamento</li>
+                <li>Força e Resistência</li>
+                <li>Treinos Dinâmicos</li>
+              </ul>
+              <p class="preco">
+              A PARTIR DE  R$ <span>200</span>,00
+              </p>
+            </a>
+          </li>
+          <li>
+          
+              <h3>Personal Trainer</h3>
+              <ul>
+                <li>Atendimento Individualizado</li>
+                <li>Método com Foco em Objetivos</li>
+                <li>Oriêntação Técnica</li>
+                <li>Acompanhamento constante</li>
+              </ul>
+          <p class="preco">
+              A PARTIR DE  R$ <span>80</span>,00
+              </p>
+            
+          </li>
+        </ul>
+        <!-- FIM --> 
         <div class="enf"></div>
       </div>
       <div class="sombra"></div>
@@ -224,37 +375,254 @@
         </ul>
       </div>
     </section>
+  
+    <!-- FEEDBACK ALUNOS -->
+  <!-- FEEDBACK ALUNOS -->
+<section id="feedback" class="sections">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="subtitle">Time Moutinho</p>
+      <h2>Feedback dos Alunos</h2>
+      <p class="description">Veja o que nossos alunos têm a dizer sobre suas experiências de treino e evolução.</p>
+    </div>
+
+    <!-- Carousel -->
+    <div id="feedbackCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <!-- ITEM 1 -->
+        <div class="carousel-item active">
+          <div class="feedback-item d-flex flex-column align-items-center text-center">
+            <img src="./img/31429.jpg" alt="Foto Aluno" class="feedback-img">
+            <h4>João Silva, 28 anos</h4>
+            <p class="feedback-text">“Treinar aqui mudou totalmente minha rotina. Hoje sou mais disciplinado e focado.”</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="carousel-item">
+          <div class="feedback-item d-flex flex-column align-items-center text-center">
+            <img src="./img/IMG-97.jpg" alt="Foto Aluno" class="feedback-img">
+            <h4>Ana Costa, 32 anos</h4>
+            <p class="feedback-text">“A energia das aulas e o acompanhamento são incríveis. Evoluí muito rápido.”</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="carousel-item">
+          <div class="feedback-item d-flex flex-column align-items-center text-center">
+            <img src="./img/IMG-101.jpg" alt="Foto Aluno" class="feedback-img">
+            <h4>Gustavo Souza, 28 anos</h4>
+            <p class="feedback-text">“Treinar aqui mudou totalmente minha rotina. Hoje sou mais disciplinado e focado.”</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="carousel-item">
+          <div class="feedback-item d-flex flex-column align-items-center text-center">
+            <img src="./img/IMG-104.jpg" alt="Foto Aluno" class="feedback-img">
+            <h4>Luana Silva, 28 anos</h4>
+            <p class="feedback-text">“Treinar aqui mudou totalmente minha rotina. Hoje sou mais disciplinado e focado.”</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="carousel-item">
+          <div class="feedback-item d-flex flex-column align-items-center text-center">
+            <img src="./img/IMG-110.jpg" alt="Foto Aluno" class="feedback-img">
+            <h4>Rafael Berredo, 28 anos</h4>
+            <p class="feedback-text">“Treinar aqui mudou totalmente minha rotina. Hoje sou mais disciplinado e focado.”</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- VALORES QUE VIROU CONTATOS-->
+   
+    <section id="valores" class="sections">
+      <div class="container">
+        <div class="content" data-anima="f-right">
+          <p class="subtitle">Time Moutinho</p>
+          <h2 style="color: #fff;"><b>Entre em Contato</b></h2>
+          <p class="description" style="text-align: justify;">
+            Ficou interessado em conhecer mais sobre nossos treinos e atividades? 
+          Entre em contato por um dos canais abaixo e venha fazer parte do <b>Time Moutinho</b>.
+            </p>
+          <img src="./img/enf.svg" alt="">
+          
+        </div>
+      <!-- Lista de Contatos ao lado esquerdo -->
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+        
+          <li class="mb-3">
+            <a href="https://wa.me/5591981363221" target="_blank" class="text-decoration-none text-dark">
+              <i class="fab fa-whatsapp fa-lg me-2 text-success"></i> 
+              WhatsApp: (91) 98136-3221
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="mailto:moutinhobjj@gmail.com" class="text-decoration-none text-dark">
+              <i class="fas fa-envelope fa-lg me-2 text-danger"></i>
+              Email: moutinhobjj@gmail.com
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="https://instagram.com/seuinstagram" target="_blank" class="text-decoration-none text-dark">
+              <i class="fab fa-instagram fa-lg me-2 text-primary"></i>
+              Instagram: @time.moutinho
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="https://youtube.com/seucanal" target="_blank" class="text-decoration-none text-dark">
+              <i class="fab fa-youtube fa-lg me-2 text-danger"></i>
+              YouTube: Canal Moutinho
+            </a>
+          </li>
+        </ul>  
+      <div class="enf enf-2" data-anima="f-right"></div>  
+      </div>
+    </div>      
+    </section>  
+
   </main>
   <footer>
-    <div class="container">
-      <div class="menu">
-        <p class="title-footer">Menu</p>
-        <nav>
-          <a href="#">Modalidades</a>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
-          <a href="#">Espaço cliente</a>
-          <a href="#">Matricule-se</a>
-        </nav>
-      </div>
-      <a href="https://www.flaticon.com/free-icons/check-mark" title="check mark icons">Check mark icons <br> created by Freepik - Flaticon</a>
-      <address class="address">
-        <div class="endereco">
-          <p class="title-footer">Endereço</p>
-          <p>Fortaleza - CE <br>
-            Lorem Ipsum, 999</p>
-        </div>
-        <div class="redes">
-          <p class="title-footer">Siga-nos</p>
-          <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
-          <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
-          <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
-        </div>
-      </address>
+  <div class="container">
+    <div class="menu">
+      <p class="title-footer">Time Moutinho</p>
+      <nav>
+        <a href="#">Valores e Disciplina</a>
+        <a href="#">Esportes e Treinos</a>
+        <a href="#">Acompanhamento Personalizado</a>
+        <a href="#">Venha Conhecer</a>
+        <a href="#">Matricule-se</a>
+      </nav>
     </div>
-    <div class="by">By <a href="#">Ariane Morelato</a></div>
-  </footer>
+
+    <div class="address">
+      <div class="endereco">
+        <p class="title-footer">Endereço</p>
+        <p>Belém - PA <br> Rua Caetanos Rufinos, 66. (altos)</p>
+        <a class="map-link"
+          href="https://www.google.com/maps/place/R.+Caetano+Rufino,+66+-+Campina,+Bel%C3%A9m+-+PA,+66015-070/@-1.4548469,-48.4963939,17z/data=!3m1!4b1!4m6!3m5!1s0x92a48e8c27d28bdb:0x81f85e5e5899292d!8m2!3d-1.4548469!4d-48.493819!16s%2Fg%2F11c5pgd915?entry=ttu"
+          target="_blank">📍 Ver no Google Maps</a>
+      </div>
+
+      <div class="redes">
+        <p class="title-footer">Siga-nos</p>
+        <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+<!--        <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/youtube.svg" alt="youtube"></a> -->
+      </div>
+    </div>
+
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.9822521600754!2d-48.49639392594269!3d-1.4548469358219584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48e8c27d28bdb%3A0x81f85e5e5899292d!2sR.%20Caetano%20Rufino%2C%2066%20-%20Campina%2C%20Bel%C3%A9m%20-%20PA%2C%2066015-070!5e0!3m2!1spt-BR!2sbr!4v1692582528945!5m2!1spt-BR!2sbr"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <div class="by">By <a href="#">Tech Norte Soluções</a></div>
+</footer>
+<!-- POP UP ao abrir o site -->
+
+<!-- POPUP AULA TESTE -->
+<div id="popupModal" class="popup-overlay">
+  <div class="popup-content">
+    <button class="popup-close">&times;</button>
+    <h2 class="popup-title">Ganhe uma Aula de Teste!</h2>
+    <p class="popup-subtitle">Escolha sua modalidade e experimente sem compromisso.</p>
+
+    <form id="popupForm" class="popup-form">
+      <label for="modalidade">Modalidade:</label>
+      <select id="modalidade" name="modalidade" required>
+        <option value="">Selecione</option>
+        <option value="BJJ Adulto">BJJ Adulto</option>
+        <option value="BJJ Kids">BJJ Kids</option>
+        <option value="BJJ Feminino">BJJ Feminino</option>
+        <option value="Cross Training">Cross Training</option>
+      </select>
+
+      <button type="submit" class="popup-btn">Quero uma aula experimental</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Função mudar imagem mestre -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const img = document.getElementById("fundador");
+  const img1 = "./img/31429.jpg";
+  const img2 = "./img/31430.jpg";
+  let atual = img1;
+
+  function trocaImagem() {
+    atual = (atual === img1) ? img2 : img1;
+    img.src = atual;
+  }
+
+  // Função para aplicar eventos dependendo da largura
+  function aplicarEvento() {
+    img.removeEventListener("mouseenter", trocaImagem);
+    img.removeEventListener("mouseleave", trocaImagem);
+    img.removeEventListener("click", trocaImagem);
+
+    if (window.innerWidth > 991) {
+      // Desktop: troca ao passar o mouse
+      img.addEventListener("mouseenter", trocaImagem);
+      img.addEventListener("mouseleave", trocaImagem);
+    } else {
+      // Mobile: troca ao clicar
+      img.addEventListener("click", trocaImagem);
+    }
+  }
+
+  aplicarEvento(); // Aplica ao carregar
+  window.addEventListener("resize", aplicarEvento); // Reaplica se mudar tamanho
+});
+</script>
   <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+  <script src="script4.js"></script>
+  
 </body>
 
 </html>
