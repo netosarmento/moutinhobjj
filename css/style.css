@@ -1355,3 +1355,41 @@ footer .by {
     width: 100%;
   }
 }
+
+/* RODAPE DESENVOLVEDOR */
+
+/* BLOCO DE CRÉDITO TECNICO */
+#footer-dev {
+  display: flex;
+  justify-content: center;       /* centraliza horizontalmente */
+  align-items: center;          /* alinha verticalmente */
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+#footer-dev img {
+  height: 26px;
+}
+
+#footer-dev a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+  #footer-dev img {
+    height: 22px;
+  }
+}
+
+@media (max-width: 661px) {
+  #footer-dev img {
+    height: 20px;
+  }
+  #footer-dev span {
+    font-size: 13px;
+  }
+}
