@@ -361,7 +361,18 @@ body {
   margin: 0 auto;
 }
 
+
 /* ENTRADA – RESPONSIVO */
+@media screen and (max-width: 600px) {
+    #entrada {
+        background-size: cover; 
+        /* Empurra a imagem 50px para cima para mostrar mais da parte de baixo */
+        background-position: center -50px; 
+    
+    }
+}
+
+
 @media (max-width: 530px) {
   #entrada .textos h1 {
     font-size: 1.75rem;
