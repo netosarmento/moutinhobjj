@@ -1359,13 +1359,18 @@ footer .by {
 /* RODAPE DESENVOLVEDOR */
 
 /* BLOCO DE CRÉDITO TECNICO */
+footer .by {
+  width: 100%;
+  padding-top: 1rem;
+}
+
 #footer-dev {
+  width: 100%;
   display: flex;
-  justify-content: center;       /* centraliza horizontalmente */
-  align-items: center;          /* alinha verticalmente */
+  justify-content: center;
+  align-items: center;
   gap: 8px;
   flex-wrap: wrap;
-  margin-top: 1rem;
   color: #fff;
 }
 
