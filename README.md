@@ -51,7 +51,7 @@ Sinta-se à vontade para contribuir com melhorias no design, acessibilidade ou d
 ## 📬 Contato
 
 📧 Email: [contato@ctmoutinho.com.br](mailto:moutinhobjj@gmail.com.br)  
-📷 Instagram: [@ctmoutinho_bjj](https://www.instagram.com/time.moutinho?igsh=d2VqZ2xsdWtkdGJw)
+📷 Instagram: [@timemoutinho](https://www.instagram.com/time.moutinho?igsh=d2VqZ2xsdWtkdGJw)
 
 ---
 
